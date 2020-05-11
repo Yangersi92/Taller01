@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+	<title>Backend con Firebase Rubén Rodriguez 67000059</title>	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://kit.fontawesome.com/b6873bc2b9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<!-- SCRIPTS NECESARIOS -->
+
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+	<!-- firebaseUI -->
+	<script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+
+	<script>
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCUD9iP-LYFzkHrxmvB2m5HB68duuQIUt0",
+    authDomain: "taller01-a5986.firebaseapp.com",
+    databaseURL: "https://taller01-a5986.firebaseio.com",
+    projectId: "taller01-a5986",
+    storageBucket: "taller01-a5986.appspot.com",
+    messagingSenderId: "610964412727",
+    appId: "1:610964412727:web:422ae31c2df6b6ad67e2b2",
+    measurementId: "G-3452X6PDX7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+	</script>
+
+	<!-- FIN DE SCRIPTS -->
+
+<section class="container shadow p-3 mb-5 text-white rounded mt-5"> 
+	<div class="container p-3 my-3 bg-dark text-white rounded mt-5 text-center">
+		<h1>Taller Backend con Firebase</h1>
+		<p>Inicia sesion y guarda tu informacion con distintas redes sociales</p>
+	  </div>
+	
+	<div class="container mt-2 mb-5">
+		<div class="text-center">
+			
+			<button id="loginGoogle" class="btn btn-outline-danger">
+				<i class="fab fa-google"></i> Login con google			
+			</button>
+		</div>
+		
+		<div class="text-center mt-3">
+			<button id="loginTwitter" class="btn btn-outline-primary">
+				<i class="fab fa-twitter"></i> Login con Twitter		
+			</button>
+		</div>
+
+		<div class="text-center mt-3">
+			<button id="loginFacebook" class="btn btn-outline-info">
+				<i class="fab fa-facebook-f"></i> Login con facebook		
+			</button>
+		</div>
+	</div>
+<HR></HR>
+<div class="text-center">
+	<h4>Informacion de la cuenta:</h4>
+</div>
+	
+<div id="root">
+	
+	<img id="avatar" src="" alt="">
+
+</div>
+
+</section>
+
+<footer class="text-center"><p class="font-weight-bold">Ruben Rodriguez 67000059</p></footer>
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
